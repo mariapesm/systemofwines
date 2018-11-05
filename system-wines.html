@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Special+Elite');
+ h2{ text-shadow: 2px 2px grey;}
+ h5{ text-shadow: 2px 2px #dfb;}
+ .quote{font-family: 'Special Elite', cursive;
+ font-style: italic; 
+ }
+ .italic{
+ font-style: italic;
+ }
+ blockquote:before {
+	content: '“';
+	left: -5rem;
+	top: -2rem;
+}
+
+blockquote:after {
+	content: '”';
+	right: -5rem;
+	bottom: 1rem;
+}
+section{box-shadow: 0 0px 6px grey;}
+.colorb{background-color: white;}
+.color1{background-color: FAEBD7;}
+.color2{background-color: 8FBC9F;}
+.color3{background-color: 483D8B;}
+.color4{background-color: A0522D;}
+.color5{background-color: dark;}
+.color6{background-color: F0E68C;}
+.color7{background-color: white;}
+.color8{background-color: A0522D;}
+.color9{background-color: black;}
+.color10{background-color: a0baa8;}
+.color11{background-color: black;}
+.color12{background-color: 8FBCfF;}
+ footer{
+text-align:center;
+
+    width: 100%;
+ font-size:16px;
+ 
+}
+</style>
+  <style>
+.button {
+ 
+  padding: 8 12px ;
+  font-size: 0.1px;
+  
+  text-align: center;
+  
+ 
+  color: #fff;
+  background-color: yellow;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 1px #000;
+  
+}
+
+.button2 {background-color: #D2691E;}
+.button3 {background-color: #f44336;} 
+.button4 {background-color: #787878; } 
+.button5 {background-color: #D2691E;}
+.button6 {background-color:rgb(52, 196, 173);}
+.button7 {background-color: #7A2C23;}
+.button8 {background-color: #C736C1;}
+.button9 {background-color: #AFC7A3;}
+.button10 {background-color: #5B237A;}
+.button11 {background-color: #5BC97A;}
+.button12 {background-color: #E4C97A;}
+.button13 {background-color: #5A6697;}
+.button14 {background-color: #6E1852;}
+.button15 {background-color: blue;}
+.button16 {background-color: #87E419;}
+
+.button17{background-color: #f44336;
+border-radius: 85px;
+  box-shadow: 0 3px #999; 
+  padding: 4px;
+}
+.button18 {background-color: #ee82ee;
+border-radius: 85px;
+  box-shadow: 0 4px #999; 
+  padding: 4px;
+}
+
+
+  .background{
+  text-align: center;
+  }
+  #buttons2{background-color: #D2691E;
+border-radius: 85px;
+  box-shadow: 0 3px #999; 
+  padding: 4px;
+}
+ #buttons3{background-color: #f44336;
+border-radius: 85px;
+  box-shadow: 0 3px #999; 
+  padding: 4px;
+}
+ #buttons4{background-color: #787878;
+border-radius: 85px;
+  box-shadow: 0 3px #999; 
+  padding: 4px;
+}
+ #buttons5{background-color: #6a5acd;
+border-radius: 85px;
+  box-shadow: 0 3px #999; 
+  padding: 4px;
+}
+ #buttons6{background-color: rgb(52, 196, 173);
+border-radius: 85px;
+  box-shadow: 0 3px #999; 
+  padding: 4px;
+}
+ #buttons7{background-color: #7A2C23;
+border-radius: 85px;
+  box-shadow: 0 3px #999; 
+  padding: 4px;
+}
+ #buttons8{background-color: #C736C1;
+border-radius: 85px;
+  box-shadow: 0 3px #999; 
+  padding: 4px;
+}
+ #buttons9{background-color: #AFC7A3;
+border-radius: 85px;
+  box-shadow: 0 3px #999; 
+  padding: 4px;
+}
+ #buttons10{background-color: #AFC7A3;
+border-radius: 85px;
+  box-shadow: 0 3px #999; 
+  padding: 4px;
+}
+ #buttons11{background-color: #5BC97A;
+border-radius: 85px;
+  box-shadow: 0 3px #999; 
+  padding: 4px;
+}
+ #buttons12{background-color: #E4C97A;
+border-radius: 85px;
+  box-shadow: 0 3px #999; 
+  padding: 4px;
+}
+ #buttons13{background-color: #5A6697;
+border-radius: 85px;
+  box-shadow: 0 3px #999; 
+  padding: 4px;
+}
+ #buttons14{background-color: #6E1852;
+border-radius: 85px;
+  box-shadow: 0 3px #999; 
+  padding: 4px;
+}
+ #buttons15{background-color: blue;
+border-radius: 85px;
+  box-shadow: 0 3px #999; 
+  padding: 4px;
+}
+</style>
+  <style>
+table, th, td {
+    border: 1px;
+    width: 600;
+	height:50;
+ text-align: center;
+padding: 14px;
+padding-top: 1px;
+padding-bottom: 1px;
+ border-collapse: collapse;
+	text-size:0.4;
+	  
+	}
+	
+	p{
+	 line-height: 1.1;
+	}
+	th{background-color: lightgrey;}
+	td, th{ width: 600;
+	padding: 19.4px;}
+	table {box-shadow: 0px 1px 5px #123;}
+	
+</style>
+
+<style>
+
+	.whole{
+	color:white;
+	
+	}
+	p{
+	text-shadow: 2px 2px grey;
+	}
+	#p{
+	text-shadow: 2px 1px black;
+	font-size: 5px;
+	font-style: normal;
+	}
+	#p1{
+	text-shadow: 0 2px 2px black;
+	font-size: 5px;
+	font-style: normal;
+	color:red;
+	
+	}
+	#p2{
+	text-shadow: 0 2px 2px black;
+	font-size: 5px;
+	font-style: normal;
+	color:#D2691E;
+	
+	}
+	#p3{
+	text-shadow: 0 2px 2px black;
+	font-size: 5px;
+	font-style: normal;
+	color:#787878;
+	
+	}
+	#p4{
+	text-shadow: 0 2px 2px black;
+	font-size: 5px;
+	font-style: normal;
+	color:rgb(52, 196, 173);
+	
+	}
+	#p5{
+	text-shadow: 0 2px 2px black;
+	font-size: 5px;
+	font-style: normal;
+	color:#7A2C23;
+	
+	}
+	#p6{
+	text-shadow: 0 2px 2px black;
+	font-size: 5px;
+	font-style: normal;
+	color:#C736C1;
+	
+	}
+	#p7{
+	text-shadow: 0 2px 2px black;
+	font-size: 5px;
+	font-style: normal;
+	color:#AFC7A3;
+	
+	}
+	#p8{
+	text-shadow: 0 2px 2px black;
+	font-size: 5px;
+	font-style: normal;
+	color:#AFC7A3;
+	
+	}
+	#p9{
+	text-shadow: 0 2px 2px black;
+	font-size: 5px;
+	font-style: normal;
+	color:#5BC97A;
+	
+	}
+	#p10{
+	text-shadow: 0 2px 2px black;
+	font-size: 5px;
+	font-style: normal;
+	color:#E4C97A;
+	
+	}
+	#p11{
+	text-shadow: 0 2px 2px lightgrey;
+	font-size: 5px;
+	font-style: normal;
+	color:#5A6697;
+	
+	}
+	#p12{
+	text-shadow: 0 2px 2px black;
+	font-size: 5px;
+	font-style: normal;
+	color:#6E1852;
+	
+	}
+	#p13{
+	text-shadow: 0 2px 2px lightgrey;
+	font-size: 5px;
+	font-style: normal;
+	color:blue;
+	
+	}
+	
+.style18{border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+
+
+</style>
+  
+  <style>
+  .normal{text-shadow: 2px 1px grey;}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #fff;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #2F9599;
+}
+
+.header h1 {
+    font-size: 50px;
+	color:white;
+	box-shadow:  2px  2px 1px 1px #eee;
+	
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+	 box-shadow: 0 3px #999;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	text-shadow: 2px 1px grey;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: white;
+    padding-left: 20px;
+	
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+	
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+	box-shadow: 0 3px 3px  #999;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+* {box-sizing: border-box;
+
+}
+
+.none{
+background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+ 
+}
+#orange{
+background : #F26B38;
+}
+#yellow{
+background: #F7DB4F;
+
+}
+#green{
+background:#9DE0AD;
+}
+#red{
+right:50px;
+bottom:20px;
+}
+
+input[type=text] {
+    border: 1px solid #ccc;  
+  }
+#scroll{
+overflow: scroll;
+  background-color: white;
+ 
+    height: 300px;
+    border: 1px  black;
+}
+#pinat1{
+overflow: scroll;
+   width: 978px;
+    border: 1px  black;
+	 background-color: #F7DB4F;
+	 box-shadow: 2px 1px 3px 1px #fff;
+}
+#pinat2{
+overflow: scroll;
+   width: 978px;
+    border: 1px  black;
+	box-shadow: 2px 1px 3px 1px #fff;
+	background-color: #F26B38;
+}
+
+#shadow{
+	text-shadow: 3px 2px 1px grey;
+	
+	font-style: normal;
+	}
+	
+	
+#p1{
+	text-shadow: 0 2px 2px black;
+	font-size: 5px;
+	font-style: normal;
+	color:red;
+	
+	}
+	
+</style>
+</head>
+<body>
+
+<div class="header">
+ <h1 id="shadow"><big><strong>Hybrid system of wines categories</strong></big></h1><br><br>
+
+  <p class="normal">Red,White, Rose, Sparkling, Dessert</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+
+  <a href="#" data-toggle="modal" data-target="#myModal">About</a>
+   <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h5 class="modal-title">Scopes</h5>
+        </div>
+        <div class="modal-body">
+          <h5>The site is voluntarily designed to portray the kinds of wines that is part of the project at Visually.com</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"><h5>Close</h5></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#" style="float:right" data-toggle="modal" data-target="#myModal1">Constribute</a>
+   <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h5 class="modal-title">Info</h5>
+        </div>
+        <div class="modal-body">
+          <h5>Credit by Maria Pesma. Has design this project on 4/11/2018. This project it can view on Visually now. </h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"><h5>Close</h5></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card" id="yellow">
+      <h2>7 categories of wines</h2>
+      <h5>Types of wine:Red,White,Sparkling</h5>
+      <div class="fakeimg" style="height:200px;" id="pinat1">
+	  
+	  
+	  <table style=" background-color:#3059A4; " style="height: 80px;" width="900" align="center">
+	<thead>
+<tr>
+<th><p class="whole"><font size="0.4">Fruity dry red</font></p></th><th><p class="whole"><font size="0.4">Sweet red</font></p></th><th><p class="whole"><font size="0.6">Herbal dry red</p></font></th><th><p class="whole"><font size="0.6">Dry white</p></font></th><th><p class="whole"><font size="0.6">Sweet white</p></font></th><th><p class="whole"><font size="0.6">White sparkling</p></font></th><th><p class="whole"><font size="0.6">Red Sparkling </p></font></th><thead>
+
+<tr>
+ <td ><button class="button button3" id="p">Sl</button></td> <td><button class="button button2" id="p">Bu</button></td><td><button class="button button4" id="p">Br</button></td><td><button class="button button6" id="p">Bb</button></td><td><button class="button button7" id="p">LH</button></td><td><button class="button button8" id="p">Vg</button></td><td><button class="button button9" id="p">LS</button></td>
+ </tr><tr>
+ <td><button class="button button3"  id="p">Gr</button></td> <td><button class="button button2" id="p">Rd</button></td><td><button class="button button4" id="p">Bo </button></td><td><button class="button button6" id="p">PG</button></td><td><button class="button button7" id="p">MB</button></td><td><button class="button button8" id="p">'Bs</button></td><td><button class="button button9" id="p">Lc</button></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">OP</button></td> <td><button class="button button2" id="p">Od</button></td><td><button class="button button4" id="p">Ci </button></td><td><button class="button button6" id="p">Al</button></td><td><button class="button button7" id="p">OA</button></td><td><button class="button button8" id="p">'Bh</button></td><td><button class="button button9" id="p">Sz</button></td
+</tr><tr>
+<td><button class="button button3"  id="p">Ga</button></td> <td><button class="button button2" id="p">Fr</button></td><td><button class="button button4" id="p">Ms</button></td><td><button class="button button6" id="p">Cl</button></td><td><button class="button button7" id="p">Ct</button></td><td><button class="button button8" id="p">Vn</button></td><td><button class="button button9" id="p">Bq</button></td
+</tr><tr>
+<td><button class="button button3"  id="p">Zw</button></td><td></td><td><button class="button button4" id="p">Vc </button></td><td><button class="button button6" id="p">Pu</button></td><td><button class="button button7" id="p">Sr</button></td><td><button class="button button8" id="p">Vw</button></td><td><button class="button button9" id="p">Le</button></td>
+<tr><tr>
+<td><button class="button button3"  id="p">Bl</button></td><td></td><td><button class="button button4" id="p">Cd</button></td><td><button class="button button6" id="p">Gr</button></td><td><button class="button button7" id="p">Re</button></td><td><button class="button button8" id="p">Nc</button></td><td><button class="button button9" id="p">Bw</button></td>
+</tr><tr>
+ <td><button class="button button3"  id="p">Gn</button> </td><td></td><td><button class="button button4" id="p">Gi</button></td><td><button class="button button6" id="p">UC</button></td><td><button class="button button7" id="p">iw</button></td><td><button class="button button8" id="p">Bt</button></td><td><button class="button button9" id="p">Ll</button></td
+ </tr><tr>
+ <td><button class="button button3"  id="p">CP</button> </td><td></td><td><button class="button button4" id="p">Bd</button></td><td><button class="button button6" id="p">Fi</button></td><td><button class="button button7" id="p">Vl</button></td><td><button class="button button8" id="p">sd</button></td><td></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">Cn</button> </td><td></td><td><button class="button button4" id="p">Bg</button></td><td><button class="button button6" id="p">Mc</button></td><td><button class="button button7" id="p">Ti</button></td><td><button class="button button8" id="p">Cv</button></td><td></td>
+</tr><tr>
+<td><button class="button button3"  id="p">NZ</button> </td><td></td><td><button class="button button4" id="p">Do</button></td><td><button class="button button6" id="p">VV</button></td><td><button class="button button7" id="p">Ch</button></td><td><button class="button button8" id="p">Bc</button></td><td></td>
+</tr><tr>
+<td><button class="button button3"  id="p">Pr</button> </td><td></td><td><button class="button button4" id="p">Gl</button></td><td><button class="button button6" id="p">As</button></td><td><button class="button button7" id="p">Rp</button></td><td><button class="button button8" id="p">EB</button></td><td></td>
+</tr><tr>
+<td><button class="button button3"  id="p">Cm</button> </td><td></td><td><button class="button button4" id="p">Be</button></td><td><button class="button button6" id="p">Si</button></td><td><button class="button button7" id="p">Rc</button></td><td><button class="button button8" id="p">Md</button></td><td></td>
+</tr><tr>
+  <td><button class="button button3"  id="p">Zi</button></td><td></td><td><button class="button button4" id="p">Bi</button></td><td><button class="button button6" id="p">Ve</button></td><td><button class="button button7" id="p">Vu</button></td><td><button class="button button8" id="p">Px</button></td><td></td>
+  </tr><tr>
+ <td><button class="button button3"  id="p">Co</button> </td><td></td><td><button class="button button4" id="p">Ta</button></td><td><button class="button button6" id="p">Cm</button></td><td><button class="button button7" id="p">Gw</button></td><td><button class="button button8" id="p">Cx</button></td><td></td>
+  </tr><tr>
+<td><button class="button button3"  id="p">Ba</button> </td><td></td><td><button class="button button4" id="p">Ri</button></td><td><button class="button button6" id="p">Sk</button></td><td><button class="button button7" id="p">Mg</button></td><td><button class="button button8" id="p">Pc</button></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">Sa</button> </td><td></td><td><button class="button button4" id="p">Cr</button></td><td><button class="button button6" id="p">To</button></td><td></td><td><button class="button button8" id="p">Rg</button></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">Cb</button> </td><td></td><td><button class="button button4" id="p">An</button></td><td><button class="button button6" id="p">UB</button></td><td></td><td><button class="button button8" id="p">Vd</button></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">Pi</button></td> <td></td><td><button class="button button4" id="p">RV</button></td><td><button class="button button6" id="p">Sn</button></td><td></td><td><button class="button button8" id="p">Mt</button></td>
+ </tr><tr>
+ <td><button class="button button3"  id="p">Te</button> </td><td></td><td><button class="button button4" id="p">Ra</button></td><td><button class="button button6" id="p">Ed</button></td><td></td><td><button class="button button8" id="p">Mh</button></td>
+  </tr><tr>
+ <td><button class="button button3"  id="p">CS</button> </td><td></td><td><button class="button button4" id="p">Gr</button></td><td><button class="button button6" id="p">Pf</button></td><td></td><td><button class="button button8" id="p">Vx</button></td>
+  </tr><tr>
+<td><button class="button button3"  id="p">Me</button> </td><td></td><td><button class="button button4" id="p">Pe</button></td><td><button class="button button6" id="p">GV</button></td><td></td><td><button class="button button8" id="p">'Dc</button></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">Va</button> </td><td></td><td><button class="button button4" id="p">Rr</button></td><td><button class="button button6" id="p">Ct</button></td><td></td><td><button class="button button8" id="p">Dv</button></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">Ch</button> </td><td></td><td><button class="button button4" id="p">Ca</button></td><td><button class="button button6" id="p">Vm</button></td><td></td><td><button class="button button8" id="p">Ap</button></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">Am</button></td><td></td><td><button class="button button4" id="p">Cu</button></td><td><button class="button button6" id="p">Mf</button></td>
+ </tr><tr>
+ <td><button class="button button3"  id="p">ST</button> </td><td></td><td><button class="button button4" id="p">Ro</button></td><td><button class="button button6" id="p">Vr</button></td>
+  </tr><tr>
+ <td><button class="button button3"  id="p">Pn</button> </td><td></td><td><button class="button button4" id="p">SJ</button></td><td><button class="button button6" id="p">Or</button></td>
+  </tr><tr>
+<td><button class="button button3"  id="p">Mo</button></td><td></td><td><button class="button button4" id="p">Fo</button></td><td><button class="button button6" id="p">PB</button></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">Sh</button> </td><td></td><td><button class="button button4" id="p">CC</button></td><td><button class="button button6" id="p">GT</button></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">PV</button> </td><td></td><td><button class="button button4" id="p">Bo</button></td><td><button class="button button6" id="p">Cy</button></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">TN</button> </td><td></td>v<td><button class="button button4" id="p">He</button></td><td><button class="button button6" id="p">Mh</button></td>
+ </tr><tr>
+ <td> <button class="button button3"  id="p">Li</button> </td><td></td><td><button class="button button4" id="p">Rt</button></td><td><button class="button button6" id="p">Mi</button></td>
+  </tr><tr>
+ <td><button class="button button3"  id="p">PS</button></td> <td></td><td><button class="button button4" id="p">SE</button></td><td><button class="button button6" id="p">So</button></td>
+  </tr><tr>
+<td><button class="button button3"  id="p">Mu</button></td><td></td><td><button class="button button4" id="p">Po</button></td><td><button class="button button6" id="p">PL</button></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">Sy</button></td><td></td><td><button class="button button4" id="p">Bb</button></td><td><button class="button button6" id="p">Ss</button></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">Mn</button></td><td></td><td><button class="button button4" id="p">La</button></td><td><button class="button button6" id="p">Vi</button></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">Ma</button></td><td></td><td><button class="button button4" id="p">Mt</button></td><td><button class="button button6" id="p">AV</button></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">Nd</button></td><td></td><td><button class="button button4" id="p">Bn</button></td><td><button class="button button6" id="p">Ce</button></td>
+ </tr><tr>
+<td><button class="button button3" id="p">Mr</button></td><td></td><td><button class="button button4" id="p">SC</button></td><td><button class="button button6" id="p">Mm</button></td>
+ </tr><tr>
+<td><button class="button button3" id="p">NB</button></td><td></td><td><button class="button button4" id="p">SB</button></td><td><button class="button button6" id="p">Fa</button></td>
+ </tr><tr>
+<td><button class="button button3"  id="p">Ld</button> </td><td></td><td><button class="button button4" id="p">Ag</button></td><td><button class="button button6" id="p">Cm</button></td>
+</tr>
+<tr>
+<td> </td><td></td><td><button class="button button4" id="p">Su</button></td><td><button class="button button6" id="p">Tj</button></td>
+</tr>
+<tr>
+<td></td><td></td><td><button class="button button4" id="p">Pc</button></td><td><button class="button button6" id="p">Rv</button></td>
+</tr>
+<tr>
+<td> </td><td></td><td><button class="button button4" id="p">Tt</button></td><td><button class="button button6" id="p">Cf</button></td>
+</tr>
+<tr>
+<td></td><td></td><td><button class="button button4" id="p">Sp</button></td><td><button class="button button6" id="p">Ml</button></td>
+</tr>
+<tr>
+<td></td><td></td><td><button class="button button4" id="p">Sg</button></td><td><button class="button button6" id="p">Vy</button></td>
+</tr>
+<tr>
+<td></td><td></td><td><button class="button button4" id="p">Md</button></td><td><button class="button button6" id="p">Ts</button></td>
+</tr>
+<tr>
+<td></td><td></td><td><button class="button button4" id="p">Ts</button></td><td><button class="button button6" id="p">Sm</button></td>
+</tr>
+
+</table>
+	  
+	  
+	  </div>
+	  <br>
+      <p class="normal">Variants</p>
+      <p class="normal">The red-wine production process involves extraction of color and flavor components from the grape skin.
+	  Red wine is made from dark-colored grape varieties. Fermentation of the non-colored grape pulp produces white wine. The grapes 
+	  from which white wine is produced are typically green or yellow. </p>
+    </div>
+    <div class="card" id="orange">
+      <h2>6 categories of wines</h2>
+      <h5>Types of wine:Sparkling, Rose, Dessert</h5>
+      <div class="fakeimg" style="height:200px;"  id="pinat2">
+	  
+	  
+	  <table style=" background-color:#3059A4;" style="height: 80px;" width="900" align="center">
+	<thead>
+<tr>
+<th><p class="whole"><font size="0.6">Rose sparkling</p><font></th><th><p class="whole"><font size="0.6">Off dry rose</p></font></th><th><p class="whole"><font size="0.6">Dry rose</p></font></th><th><p class="whole"><font size="0.6">Nutty oxidized fortified</p></font></th><th><p class="whole"><font size="0.6">White fortified</p></font></th><th><p class="whole"><font size="0.6">Red fortified</p></font></th></tr><thead>
+<tbody>
+<tr>
+ <td><button class="button button10" id="p">Cw</button></td><td><button class="button button11" id="p">By</button></td><td><button class="button button12" id="p">PN</button></td><td><button class="button button13" id="p">ΟS</button></td><td><button class="button button14" id="p">WP</button></td><td><button class="button button15" id="p">VP</button></td>
+ </tr><tr>
+ <td><button class="button button10" id="p">Bf</button></td><td><button class="button button11" id="p">WM</button></td><td><button class="button button12" id="p">Gn</button></td><td><button class="button button13" id="p">Mf</button></td><td><button class="button button14" id="p">WF</button></td><td><button class="button button15" id="p">Ry</button></td>
+ </tr><tr>
+<td><button class="button button10" id="p">My</button></td><td><button class="button button11" id="p">WZ</button></td><td><button class="button button12" id="p">PR</button></td><td><button class="button button13" id="p">Al</button></td><td><button class="button button14" id="p">Wv</button></td><td><button class="button button15" id="p">Lt</button></td>
+</tr><tr>
+<td><button class="button button10" id="p">Cf</button></td><td><button class="button button11" id="p">Vs</button></td><td><button class="button button12" id="p">SR</button></td><td><button class="button button13" id="p">Fh</button></td><td><button class="button button14" id="p">Ws</button></td><td><button class="button button15" id="p">Fy</button></td>
+</tr><tr>
+<td><button class="button button10" id="p">Cg</button></td><td><button class="button button11" id="p">Rj</button></td><td><button class="button button12" id="p">Rs</button></td><td><button class="button button13" id="p">Mx</button></td><td></td><td><button class="button button15" id="p">RM</button></td>
+</tr><tr>
+<td><button class="button button10" id="p">Cp</button></td><td><button class="button button11" id="p">Gm</button></td><td><button class="button button12" id="p">Tl</button></td><td><button class="button button13" id="p">Oy</button></td><td></td><td><button class="button button15" id="p">wR</button></td>
+</tr><tr>
+<td></td><td></td><td></td><td><button class="button button13" id="p">Ol</button></td>
+ </tr><tr>
+<td></td><td></td><td></td><td><button class="button button13" id="p">Mz</button></td>
+ </tr><tr>
+<td></td><td></td><td></td><td><button class="button button13" id="p">Cz</button></td>
+</tr><tr>
+<td></td><td></td><td></td><td><button class="button button13" id="p">Pz</button></td>
+</tr><tr>
+<td></td><td></td><td></td><td><button class="button button13" id="p">Uf</button></td>
+</tr><tr>
+<td></td><td></td><td></td><td><button class="button button13" id="p">Hf</button></td>
+</tr><tr>
+<td></td><td></td><td></td><td><button class="button button13" id="p">Hm</button></td>
+  </tr><tr>
+ <td></td><td></td><td></td><td><button class="button button13" id="p">VH</button></td>
+ </tr><tr>
+
+
+</table>
+
+	  
+	  </div>
+	  <br>
+      <p class="normal">Variants</p>
+      <p class="normal">A rosé wine incorporates some of the color from the grape skins, but not
+	  enough to qualify it as a red wine. It may be the oldest known type of wine
+	  , as it is the most straightforward to make with the skin contact method. Pudding wines, sometimes called dessert wines, are sweet wines typically served with dessert.
+
+There is no simple definition of a dessert wine. In the UK, a dessert wine is considered to be any sweet wine drunk with a meal, as opposed to the white[1] fortified wines (fino and amontillado sherry) 
+drunk before the meal, and the red fortified wines (port and madeira) drunk after it.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card" id="green">
+      <h2 class="italic">Quote about wines</h2>
+      <div class="fakeimg" style="height:200px;"><h5 class="quote"><blockquote>Quickly, bring me a beaker of wine, so that I may wet my mind and say something clever.</blockquote></h5>
+ 
+    </div>  <h5 class="normal"><cite>Aristophanes</cite>
+</h5>
+    </div>
+    <div class="card" id="scroll">
+      <h3>All kinds of wines</h3>
+     
+	   
+	   <div class="fakeimg">
+	    
+      <h6 id="p1"><button class="button button17" id="p">SL</button> &nbsp St.Laurent</h4>
+     
+    
+    
+   
+      <h6 id="p1"><button class="button button17" id="p">Gr</button>&nbsp Gergan Spatburgunder.</h4>
+    
+     
+   
+     <h6 id="p1"><button class="button button17" id="p">OP</button>&nbsp Oregon Pinot Noir</h4>        
+    
+     
+   
+     <h6 id="p1"><button class="button button17" id="p">Ga</button>&nbsp Gamay</h4>        
+     
+     
+   
+       <h6  id="p1"><button class="button button17" id="p">Zw</button>&nbsp Zweigelt</h4>        
+   
+    
+      <h6 id="p1"><button class="button button17" id="p">Bl&nbsp</button> &nbsp Blaufrankisch</h4>
+  
+    
+      <h6 id="p1"><button class="button button17" id="p">Gn</button>&nbsp Ganarcha</h4>
+    
+     <h6 id="p1"><button class="button button17" id="p">CP</button>&nbsp California Pinot Noir</h4>        
+    
+     <h6 id="p1"><button class="button button17" id="p">Cn</button>&nbsp Chile Pinot Noir</h4>        
+    
+       <h6 id="p1"><button class="button button17" id="p">NZ</button>&nbsp New Zealand Pinot Noir</h4>        
+     
+      <h6 id="p1"><button class="button button17" id="p">Pr&nbsp</button> &nbsp Primitivo</h4>
+  
+      <h6 id="p1"><button class="button button17" id="p">Cm</button>&nbsp Carmenere</h4>
+     
+     <h6 id="p1"><button class="button button17" id="p">Zi&nbsp </button>&nbsp Zinfandel</h4>        
+   
+     <h6 id="p1"><button class="button button17" id="p">Co</button>&nbsp Counoise</h4>        
+    
+       <h6 id="p1"><button class="button button17" id="p">Ba&nbsp </button>&nbsp Barbera</h4>        
+   
+      <h6 id="p1"><button class="button button17" id="p">Sa</button> &nbsp Sangiovese</h4>
+  
+      <h6 id="p1"><button class="button button17" id="p">Cb</button>&nbsp Cabernet Franc</h4>
+     
+     
+     <h6 id="p1"><button class="button button17" id="p">Pi&nbsp </button>&nbsp Priorat California</h4>        
+    
+     <h6 id="p1"><button class="button button17" id="p">Te&nbsp </button>&nbsp Tempranillo Chile </h4>        
+    
+       <h6 id="p1"><button class="button button17" id="p">CS</button>&nbsp Cabernet Sauvignon</h4>        
+     
+      <h6 id="p1"><button class="button button17" id="p">Me</button> &nbsp Merlot</h4>
+    
+      <h6 id="p1"><button class="button button17" id="p">Va</button>&nbsp Valpolicella</h4>
+    
+     
+     <h6 id="p1"><button class="button button17" id="p">Ch</button>&nbsp Chateauneuf du Pape</h4>        
+    
+     <h6 id="p1"><button class="button button17" id="p">Am</button>&nbsp Amarone</h4>        
+  
+       <h6 id="p1"><button class="button button17" id="p">ST</button>&nbsp Super Tuscan</h4>        
+   
+      <h6 id="p1"><button class="button button17" id="p">Pn</button> &nbsp Pinotage</h4>
+    
+      <h6 id="p1"><button class="button button17" id="p">Mo</button>&nbsp Monastrell</h4>
+    
+     <h6 id="p1"><button class="button button17" id="p">Sh</button>&nbsp Shiraz</h4>        
+      
+   
+     <h6 id="p1"><button class="button button17" id="p">PV</button>&nbsp Petit Verdot</h4>        
+    
+       
+      <h6 id="p1"><button class="button button17" id="p">Li&nbsp </button> &nbsp Lirac</h4>
+      
+      <h6 id="p1"><button class="button button17" id="p">PS</button>&nbsp Petite Sirah</h4>
+    
+     
+     <h6 id="p1"><button class="button button17" id="p">Mu</button>&nbsp Mourvedre</h4>        
+     
+     <h6 id="p1"><button class="button button17" id="p">Sy</button>&nbsp Syrah</h4>        
+     
+   
+       <h6 id="p1"><button class="button button17" id="p">Mn</button>&nbsp Mencia</h4>        
+     
+    
+      <h6 id="p1"><button class="button button17" id="p">Ma</button> &nbsp Malbec</h4>
+     
+      <h6 id="p1"><button class="button button17" id="p">Nd</button>&nbsp Nero d'Avola</h4>
+  
+    
+     <h6 id="p1"><button class="button button17" id="p">Mr</button>&nbsp 'Meritage'</h4>        
+     
+   
+     <h6 id="p1"><button class="button button17" id="p">NB</button>&nbsp  Nero Buono Chile </h4>        
+   
+      <h6 id="p1"><button class="button button17" id="p">Ld</button>&nbsp Lacrima di Morro d'Alba</h4>      
+    
+      <h6 id="p2"><button class="button button2" id="buttons2"><span id="p">Bu</span></button>&nbsp Bulk</h4>  
+   
+     <h6 id="p2"><button class="button button2" id="buttons2"><span id="p">Rd</span></button>&nbsp Recioto della Valpolicella</h4>        
+    
+      <h6 id="p2"><button class="button button2" id="buttons2"><span id="p">Od</span></button>&nbsp Occhio di Pernice</h4>  
+    
+     <h6 id="p2"><button class="button button2" id="buttons2"><span id="p">Fr</span>&nbsp </button>&nbsp Freisa</h4>        
+   
+      <h6 id="p3"><button class="button button4" id="buttons4" ><span id="p">Br</span></button>&nbsp Barabaresco</h4>  
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Bm</span></button>&nbsp Barolo clay & cured meats</h4>        
+   
+      <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Ci</span></button>&nbsp Chianti</h4>  
+  
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Ms</span></button>&nbsp Montefalco Rosso</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Vc</span></button>&nbsp Vacqueyras</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Cd</span></button>&nbsp Cotes du Rhone</h4>        
+  
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Gi</span></button>&nbsp Gigondas</h4>        
+    
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Bd</span></button>&nbsp Brunello di Montalcino</h4>        
+    
+     <h6 id="p3"><button class="button button4"  id="buttons4"><span id="p">Bg</span></button>&nbsp Bourgogne</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Do</span></button>&nbsp Doicetto</h4>        
+    
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Gl</span></button>&nbsp Grignolino</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Be</span></button>&nbsp Barbera</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Bi</span></button>&nbsp Beaujolais</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Ta</span></button>&nbsp Taurasi</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Ri</span></button>&nbsp Rioja</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Cr</span></button>&nbsp Cahors</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">An</span></button>&nbsp Anglianico</h4>        
+    
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">RV</span></button>&nbsp Recioto della Valpolicella</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Ra</span></button>&nbsp Ribera del Duero</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Gr</span></button>&nbsp Graves</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Pe</span></button>&nbsp Pessac Leognan</h4>        
+    
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Rr</span></button>&nbsp Rioja reserva</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Ca</span></button>&nbsp Cornas</h4>        
+  
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Cu</span></button>&nbsp Cannonau di Sardegna</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Ro</span></button>&nbsp Rhone</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">SJ</span></button>&nbsp Saint Joseph</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Fo</span></button>&nbsp Fronsac</h4>        
+  
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">CC</span></button>&nbsp Cotes di Castillo</h4>        
+  
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Bo</span></button>&nbsp Bandol</h4>        
+  
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">He</span></button>&nbsp Hermitage</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Rt</span></button>&nbsp Recioto della Valpolicella</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">SE</span></button>&nbsp Saint Emilion</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Po</span></button>&nbsp Pomerol</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Bb</span></button>&nbsp Barbera di'Alba</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">la</span></button>&nbsp Lagrein</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Mt</span></button>&nbsp Montepuciano de Ambruzzo</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Bn</span></button>&nbsp Bardolino</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">SC</span></button>&nbsp Chinon</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">SB</span></button>&nbsp Bourgueil</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Ag</span></button>&nbsp Agiorgitioko</h4>        
+    
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Su</span></button>&nbsp Saint-Julien</h4>        
+  
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Tt</span></button>&nbsp Pauillac</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Sp</span></button>&nbsp Tannat</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Sg</span></button>&nbsp Sagrantino</h4>        
+   
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Md</span></button>&nbsp Medoc</h4>        
+    
+     <h6 id="p3"><button class="button button4" id="buttons4"><span id="p">Ts</span></button>&nbsp Cahors</h4>        
+   
+      <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Bb</span></button>&nbsp Granache Blanc</h4>  
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">PG</span></button>&nbsp Pinot Grigio</h4>        
+   
+      <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">AL</span></button>&nbsp Albarino</h4>  
+  
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Cl</span></button>&nbsp Chablis</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Pu</span></button>&nbsp Picpoul</h4>        
+    
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Gr</span></button>&nbsp Garganega</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">UC</span></button>&nbsp Unoaked Chardonnay</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Fi</span></button>&nbsp Fiano</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Mc</span></button>&nbsp Muscadet</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">VV</span></button>&nbsp Vincho Verde</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">As</span></button>&nbsp Assyrtiko</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Si</span></button>&nbsp Silvaner</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Ve</span></button>&nbsp Verdejo</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Lg</span></button>&nbsp Light herbal grassy Chevemy</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Sk</span></button>&nbsp Sauvignon Blank</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">To</span></button>&nbsp Touraine</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">UB</span></button>&nbsp Ugni Blank</h4>        
+  
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Sn</span></button>&nbsp Sancerre</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Ed</span></button>&nbsp Entre deux Mers</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Pf</span></button>&nbsp Pouilly fume</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">GV</span></button>&nbsp Gruner Veltliner</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Ct</span></button>&nbsp Cortese</h4>        
+  
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Vm</span></button>&nbsp Vermentino</h4>        
+    
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Mf</span></button>&nbsp Moscofiliro</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Vr</span></button>&nbsp Verdicchio</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Or</span></button>&nbsp Orvieto</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">PB</span></button>&nbsp Pinot Blanc</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">GT</span></button>&nbsp Greco di Tufo</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Cy</span></button>&nbsp Chardonnay</h4>        
+  
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Mh</span></button>&nbsp Montrachet</h4>        
+    
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Mi</span></button>&nbsp Macconais</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">So</span></button>&nbsp Soave</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">PL</span></button>&nbsp Pessac Leognan</h4>        
+  
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Ss</span></button>&nbsp Savennieres</h4>        
+    
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Vi</span></button>&nbsp Viognier</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">AV</span></button>&nbsp Antao Vaz</h4>        
+    
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Ce</span></button>&nbsp Cote de Beaune</h4>        
+    
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Mm</span></button>&nbsp Marsanne</h4>        
+    
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Fa</span></button>&nbsp Fiano</h4>        
+  
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Cm</span></button>&nbsp Chenin Blanc 'dry'</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Tj</span></button>&nbsp Tokaji</h4>        
+    
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Rv</span></button>&nbsp Roussanne</h4>        
+    
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Ct</span></button>&nbsp Coudrieu</h4>        
+    
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">MI</span></button>&nbsp Malvasia 'secco'</h4>        
+   
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Vy</span></button>&nbsp Vouvray 'sec'</h4>        
+    
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Ts</span></button>&nbsp Torrontes</h4>        
+    
+     <h6  id="p4"><button class="button button6" id="buttons6"><span id="p">Sm</span></button>&nbsp Semillon</h4>        
+    
+      <h6  id="p5"><button class="button button7" id="buttons7"><span id="p">LH</span></button>&nbsp 'Late Harvest'</h4>  
+   
+     <h6  id="p5"><button class="button button7" id="buttons7"><span id="p">MB</span></button>&nbsp Muscat Blanc</h4>        
+   
+      <h6  id="p5"><button class="button button7" id="buttons7"><span id="p">OA</span></button>&nbsp Orvieto 'Abboccato'</h4>  
+   
+     <h6  id="p5"><button class="button button7" id="buttons7"><span id="p">Ct</span></button>&nbsp Chenin Blanc 'Sweet'</h4>        
+   
+     <h6  id="p5"><button class="button button7" id="buttons7"><span id="p">Sr</span></button>&nbsp Sauternes</h4>        
+   
+     <h6  id="p5"><button class="button button7" id="buttons7"><span id="p">Re</span></button>&nbsp Ruesling 'Auslese'</h4>        
+  
+     <h6  id="p5"><button class="button button7" id="buttons7"><span id="p">iw</span></button>&nbsp 'ice wine'</h4>        
+    
+     <h6  id="p5"><button class="button button7" id="buttons7"><span id="p">Vl</span></button>&nbsp Vouvray 'Modelleux'</h4>        
+   
+     <h6  id="p5"><button class="button button7" id="buttons7"><span id="p">Ti</span></button>&nbsp Tokaji</h4>        
+   
+     <h6  id="p5"><button class="button button7" id="buttons7"><span id="p">Ch</span></button>&nbsp Chenin Blanc</h4>        
+  
+     <h6  id="p5"><button class="button button7" id="buttons7"><span id="p">Rp</span></button>&nbsp Riesling 'spatlese'</h4>        
+   
+     <h6  id="p5"><button class="button button7" id="buttons7"><span id="p">Rc</span></button>&nbsp Riesling 'cabinett'</h4>        
+    
+     <h6  id="p5"><button class="button button7" id="buttons7"><span id="p">Vu</span></button>&nbsp Vouvray 'demi sec'</h4>        
+  
+     <h6  id="p5"><button class="button button7" id="buttons7"><span id="p">Gw</span></button>&nbsp Gewurztraminer</h4>        
+    
+     <h6  id="p5"><button class="button button7" id="buttons7"><span id="p">Mg</span></button>&nbsp Muller Thurgau</h4>        
+   
+      <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Vg</span></button>&nbsp Vintage Champagne</h4>  
+   
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Bs</span></button>&nbsp 'Blanc de Noirs'</h4>        
+    
+      <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Bh</span></button>&nbsp 'Blanc de Blancs'</h4>  
+  
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Vn</span></button>&nbsp Vintage 'Metodo classico'</h4>        
+   
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Vw</span></button>&nbsp Vintage sparkling wine</h4>        
+  
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Nc</span></button>&nbsp Non vintage champagne</h4>        
+   
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Bt</span></button>&nbsp 'Brut Nature'</h4>        
+    
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">sd</span></button>&nbsp 'sec'</h4>        
+   
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Cv</span></button>&nbsp Cava</h4>        
+   
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Bc</span></button>&nbsp 'Brut'</h4>        
+    
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">EB</span></button>&nbsp 'Extra Brut'</h4>        
+    
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Md</span></button>&nbsp 'Metodo Classico'</h4>        
+   
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Px</span></button>&nbsp Prosecco 'Extra Brut'</h4>        
+   
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Cx</span></button>&nbsp Champagne 'Extra dry'</h4>        
+    
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Pc</span></button>&nbsp Prosecco</h4>        
+    
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Rg</span></button>&nbsp Sparkling Riesling</h4>        
+   
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Vd</span></button>&nbsp Valdobbiadene</h4>        
+   
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Mt</span></button>&nbsp Malvasia 'secco'</h4>        
+    
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Mh</span></button>&nbsp Moscato d'Asti</h4>        
+   
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Vx</span></button>&nbsp Vouvray 'Mousseux'</h4>        
+   
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Dc</span></button>&nbsp 'Demi-sec'</h4>        
+    
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Dv</span></button>&nbsp 'Doux'</h4>        
+   
+     <h6  id="p6"><button class="button button8" id="buttons8"><span id="p">Ap</span></button>&nbsp Asti 'Spumante'</h4>        
+   
+     <h6  id="p7"><button class="button button9" id="buttons9"><span id="p">LS</span></button>&nbsp Lambrusco 'Spumante'</h4>        
+    
+     <h6  id="p7"><button class="button button9" id="buttons9"><span id="p">Lc</span></button>&nbsp Lambrusco 'secco'</h4>        
+    
+     <h6  id="p7"><button class="button button9" id="buttons9"><span id="p">Sz</span></button>&nbsp Sparkling shiraz</h4>        
+    
+     <h6  id="p7"><button class="button button9" id="buttons9"><span id="p">Bq</span></button>&nbsp Brachetto d'Acqui</h4>        
+   
+     <h6  id="p7"><button class="button button9" id="buttons9"><span id="p">Le</span></button>&nbsp Lambrusco 'Dolce'</h4>        
+    
+     <h6  id="p7"><button class="button button9" id="buttons9"><span id="p">Bw</span></button>&nbsp Brachetto d'Acqui</h4>        
+    
+     <h6  id="p7"><button class="button button9" id="buttons9"><span id="p">Ll</span></button>&nbsp Labrusco 'Amabile'</h4>        
+    
+     <h6  id="p8"><button class="button button10" id="buttons10"><span id="p">Cw</span></button>&nbsp Cava Rose</h4>        
+    
+     <h6  id="p8"><button class="button button10" id="buttons10"><span id="p">Bf</span></button>&nbsp Brachetto d'Acqui Rose</h4>        
+    
+     <h6  id="p8"><button class="button button10" id="buttons10"><span id="p">My</span></button>&nbsp Moscato Rose</h4>        
+  
+     <h6  id="p8"><button class="button button10" id="buttons10"><span id="p">Cf</span></button>&nbsp Cava Rose 'Brut'</h4>        
+    
+     <h6  id="p8"><button class="button button10" id="buttons10"><span id="p">Cg</span></button>&nbsp 'Cremante' Rose</h4>        
+    
+     <h6  id="p8"><button class="button button10" id="buttons10"><span id="p">Cp</span></button>&nbsp Champage Rose</h4>        
+   
+     <h6  id="p9"><button class="button button11" id="buttons11"><span id="p">By</span></button>&nbsp Blush wine</h4>        
+    
+     <h6  id="p9"><button class="button button11" id="buttons11"><span id="p">WM</span></button>&nbsp White Merlot</h4>        
+    
+     <h6  id="p9"><button class="button button11" id="buttons11"><span id="p">WZ</span></button>&nbsp White Zinfadel</h4>        
+    
+     <h6  id="p9"><button class="button button11" id="buttons11"><span id="p">Vz</span></button>&nbsp 'Vin Gris'</h4>        
+    
+     <h6  id="p9"><button class="button button11" id="buttons11"><span id="p">Rj</span></button>&nbsp Rose d'Anjou</h4>        
+    
+     <h6  id="p9"><button class="button button11" id="buttons11"><span id="p">Gm</span></button>&nbsp Gamacha Rosado</h4>        
+   
+     <h6  id="p10"><button class="button button12" id="buttons12"><span id="p">PN</span></button>&nbsp Pinot Noir Rose</h4>        
+   
+     <h6  id="p10"><button class="button button12" id="buttons12"><span id="p">Gn</span></button>&nbsp Grenache Rose</h4>        
+    
+     <h6  id="p10"><button class="button button12" id="buttons12"><span id="p">PR</span></button>&nbsp Provence Rose</h4>        
+   
+     <h6  id="p10"><button class="button button12" id="buttons12"><span id="p">SR</span></button>&nbsp Sangiovese Rose</h4>        
+    
+     <h6  id="p10"><button class="button button12" id="buttons12"><span id="p">Rs</span></button>&nbsp 'Rosado'</h4>        
+    
+     <h6  id="p10"><button class="button button12" id="buttons12"><span id="p">Tl</span></button>&nbsp Tavel</h4>        
+   
+     <h6  id="p11"><button class="button button13" id="buttons13"><span id="p">OS</span></button>&nbsp Off dry almond Sherry</h4>        
+    
+     <h6  id="p11"><button class="button button13" id="buttons13"><span id="p">Mf</span></button>&nbsp Marsala off dry almond</h4>        
+    
+     <h6  id="p11"><button class="button button13" id="buttons13"><span id="p">Al</span></button>&nbsp 'Amontillado' sherry</h4>        
+    
+     <h6  id="p11"><button class="button button13" id="buttons13"><span id="p">Fh</span></button>&nbsp 'Fino' sherry</h4>        
+    
+     <h6  id="p11"><button class="button button13" id="buttons13"><span id="p">Mx</span></button>&nbsp Madeira nutty oxidized fortified</h4>        
+   
+     <h6  id="p11"><button class="button button13" id="buttons13"><span id="p">Oy</span></button>&nbsp 'Oloroso' sherry</h4>        
+    
+     <h6  id="p11"><button class="button button13" id="buttons13"><span id="p">Ol</span></button>&nbsp Oxidized fortfied sweet hazelnut Montilla-Moriles</h4>        
+   
+     <h6  id="p11"><button class="button button13" id="buttons13"><span id="p">Mz</span></button>&nbsp Cream sherry</h4>        
+    
+     <h6  id="p11"><button class="button button13" id="buttons13"><span id="p">Pz</span></button>&nbsp Pedro Ximerez</h4>        
+   
+     <h6  id="p11"><button class="button button13" id="buttons13"><span id="p">Uf</span></button>&nbsp Oxidized fortified Tawny Port</h4>        
+   
+     <h6  id="p11"><button class="button button13" id="buttons13"><span id="p">Hf</span></button>&nbsp Hazelnut Vin Santo(non fortified)</h4>        
+   
+     <h6  id="p11"><button class="button button13" id="buttons13"><span id="p">HM</span></button>&nbsp Hazelnut Moscadel de Setubal</h4>        
+   
+     <h6  id="p12"><button class="button button14" id="buttons14"><span id="p">WP</span></button>&nbsp White Port</h4>        
+    
+     <h6  id="p12"><button class="button button14" id="buttons14"><span id="p">WF</span></button>&nbsp White Muscat de Frontignan</h4>        
+   
+     <h6  id="p12"><button class="button button14" id="buttons14"><span id="p">Wv</span></button>&nbsp White Muscat de beaumes de Venise</h4>        
+   
+     <h6  id="p12"><button class="button button14" id="buttons14"><span id="p">Ws</span></button>&nbsp White Muscat de Rivesaltes</h4>        
+   
+     <h6  id="p13"><button class="button button15" id="buttons15"><span id="p">VP</span></button>&nbsp Vintage Port</h4>        
+   
+     <h6  id="p13"><button class="button button15" id="buttons15"><span id="p">Ry</span></button>&nbsp Ruby Port</h4>        
+    
+     <h6  id="p13"><button class="button button15" id="buttons15"><span id="p">Lt</span></button>&nbsp LBV Port</h4>        
+   
+     <h6  id="p13"><button class="button button15" id="buttons15"><span id="p">Fy</span></button>&nbsp Fortified Banyuls</h4>        
+    
+     <h6  id="p13"><button class="button button15" id="buttons15"><span id="p">RM</span></button>&nbsp Red fortified Maury</h4>        
+  
+     <h6  id="p13"><button class="button button15" id="buttons15"><span id="p">Rf</span></button>&nbsp Red fortified Rasteau</h4>        
+    </div>
+	   </div>
+	   
+    </div>
+	
+    
+  
+  </div>
+</div>
+
+<div class="footer" id="shadow">
+  <h4>Copyright ©2018 Maria Pesma. All Rights Reserved 2018. You can view this infographic on VISUALLY.COM</h4>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+    //Disable full page
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+    
+    //Disable part of page
+    $("#id").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+    //Disable full page
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+    
+    //Disable part of page
+    $('#id').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+});
+</script>
+
+
+
+</body>
+</html>
+
